@@ -1,0 +1,19 @@
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.todo-card {
+  transition: box-shadow 0.15s ease;
+}
+
+.todo-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link {
+  cursor: pointer;
+}
+
+#empty-msg {
+  font-size: 1.1rem;
+}
