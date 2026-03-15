@@ -147,6 +147,11 @@ document.getElementById('modal-submit').addEventListener('click', async () => {
       headers: authHeaders(),
       body: JSON.stringify(payload),
     });
+    // Switch to active tab so the new todo is visible
+    currentStatus = 'active';
+    document.querySelectorAll('#statusTabs .nav-link').forEach(b => {
+      b.classList.toggle('active', b.dataset.status === 'active');
+    });
   }
 
   todoModal.hide();
